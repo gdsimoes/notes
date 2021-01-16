@@ -1,4 +1,4 @@
-# Some bash and zsh notes
+# Some bash notes
 
 ## Shel history size
 
