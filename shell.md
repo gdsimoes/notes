@@ -50,3 +50,21 @@ Show current units:
 ```
 systemctl
 ```
+
+## nmap
+
+Find all open ports:
+
+```
+nmap -p- localhost
+```
+
+## ip
+
+To find actual ip address use:
+
+```
+ip a
+```
+
+A good resource to understand this output is [How-To Geek](https://www.howtogeek.com/657911/how-to-use-the-ip-command-on-linux/).
