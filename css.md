@@ -22,10 +22,11 @@ Just use the `z-index` property. I believe that with `z-index` and `position: fi
 
 ## Hiding and element
 
-Just add:
+Here we have two options:
 
 ```
 visibility: hidden;
+display:none;
 ```
 
-This is very useful in the browser inspector.
+This is very useful in the browser inspector. The difference between the two is that if you use visibility, space is still allocated for the element, while in the display case, it isn't.
