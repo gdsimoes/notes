@@ -48,3 +48,12 @@ text = "Hello";
 ```
 
 This example shows that what is stored in the closure are not the values of the variables. If it were, this program would print 'Goodbye' instead of 'Hello.' What is stored in the closure are the references, and when the value of 'text' is changed, this affects the program's output.
+
+## The '+' unary operator
+
+The '+' unary operator evaluates to its operand, trying to convert it to a number if it isn't one:
+
+```javascript
+let number = "2.7";
+console.log(typeof +number);
+```
