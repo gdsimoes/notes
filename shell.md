@@ -76,3 +76,23 @@ To send a public key to a server use:
 ```shell
 ssh-copy-id -i keyName.pub user@serverAddress
 ```
+
+## Forbid ssh using passwords
+
+Change `PasswordAuthentication` directive in `/etc/ssh/sshd_config` to 'no' and restart the ssh daemon:
+
+```shell
+sudo systemctl restart ssh
+```
+
+## Add user to the super user's group
+
+```shell
+usermod -aG sudo username
+```
+
+## Check logs in realtime
+
+```shell
+tail -f /var/log/auth.log
+```
