@@ -57,3 +57,13 @@ The '+' unary operator evaluates to its operand, trying to convert it to a numbe
 let number = "2.7";
 console.log(typeof +number);
 ```
+
+## How to time operations
+
+```javascript
+console.time("name");
+doSomething();
+console.timeLog("name");
+doSomethingElse();
+console.timeEnd("name");
+```
