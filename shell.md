@@ -102,3 +102,7 @@ tail -f /var/log/auth.log
 ```shell
 host domain-name
 ```
+
+## Site with a lot of `find` examples
+
+[LinuxTechi](https://www.linuxtechi.com/25-find-command-examples-for-linux-beginners/)
