@@ -106,3 +106,31 @@ host domain-name
 ## Site with a lot of `find` examples
 
 [LinuxTechi](https://www.linuxtechi.com/25-find-command-examples-for-linux-beginners/)
+
+## SFTP
+
+SFTP is a simple and secure way of transferring files between machines. It uses the SSH configuration file, so connecting to another computer is a breeze. A lot of its commands are similar to bash, but a few are different and worth mentioning.
+
+### Execute commands in local shell
+
+```shell
+!command
+```
+
+You can also just use `!` to go back to the local shell.
+
+### Download file
+
+```
+get filename
+```
+
+### Download directory
+
+```
+get -r directory
+```
+
+### Upload files and directories
+
+Same syntax as `get` but using `put` instead.
