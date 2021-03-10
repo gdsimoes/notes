@@ -10,7 +10,7 @@ A nice way of swaping variables using destructuting and avoiding creating a temp
 
 ## How to set a variable with a default value
 
-Instead of the most common way of doing this using `||` (which doesn't work for falsy values) we can use `??`:
+Instead of the most common way of doing this using `||` (which ignores not only null and undefined, but all falsy values) we can use `??`:
 
 ```javascript
 let variable = arg.method() ?? default
