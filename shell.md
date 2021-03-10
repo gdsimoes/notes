@@ -121,13 +121,15 @@ You can also just use `!` to go back to the local shell.
 
 ### Download file
 
+shell
+
 ```
 get filename
 ```
 
 ### Download directory
 
-```
+```shell
 get -r directory
 ```
 
@@ -138,3 +140,31 @@ Same syntax as `get` but using `put` instead.
 ## Repeat last command
 
 To repeat the last comand just enter `!!`. It is particularly useful when you need to repeat a command with root privileges: `sudo !!`.
+
+## Using the `service` wrapper
+
+### Reload service
+
+```shell
+sudo service nginx reload
+```
+
+## Process management with pm2
+
+### Installation
+
+```
+sudo npm i -g pm2
+```
+
+### Start app
+
+```
+pm2 start app.js
+```
+
+### Setup auto restart
+
+```
+pm2 startup
+```
