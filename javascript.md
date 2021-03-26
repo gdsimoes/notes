@@ -67,3 +67,10 @@ console.timeLog("name");
 doSomethingElse();
 console.timeEnd("name");
 ```
+
+## Computed property names in object literals
+
+```javascript
+const name = "Guilherme";
+const objectLiteral = { [name]: "Simoes" };
+```
