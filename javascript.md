@@ -74,3 +74,13 @@ console.timeEnd("name");
 const name = "Guilherme";
 const objectLiteral = { [name]: "Simoes" };
 ```
+
+## The `debugger` statement
+
+It works on the browser's console.
+
+```javascript
+function needsToBeDebbugged() {
+    debugger;
+}
+```
