@@ -84,3 +84,24 @@ function needsToBeDebbugged() {
     debugger;
 }
 ```
+
+## Some considerations about promises
+
+A `.then` method also returns a promise. Let's look at a real world example that illustrates that:
+
+```javascript
+const getAll = () => {
+    const request = axios.get(baseUrl);
+    return request.then((response) => response.data);
+};
+```
+
+The function `getAll` returns a promise, not `response.data` and to get access to that we need to use a callback function:
+
+```javascript
+useEffect(() => {
+    noteService.getAll().then((initialNotes) => {
+        setNotes(initialNotes);
+    });
+}, []);
+```
