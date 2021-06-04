@@ -31,7 +31,7 @@ display:none;
 
 This is very useful in the browser inspector. The difference between the two is that if you use visibility, space is still allocated for the element, while in the display case, it isn't.
 
-# Make in-page navigation smoother
+## Make in-page navigation smoother
 
 The default behavior when a user clicks on a link that leads to another section on the same page is for the browser to "teleport" the user to given section. To make this transition smoother use:
 
