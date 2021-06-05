@@ -41,3 +41,15 @@ html {
 
 }
 ```
+
+## The initial value of a property
+
+The initial value of a property belongs only to that property and not to any element type. By this, I mean that, for example, the following code will not set the text to bold:
+
+```CSS
+strong {
+    font-weight: initial;
+}
+```
+
+The value we usually get for 'font-weight in 'strong' elements is defined in the user-agent stylesheet and is not the so-called 'initial' value of font-weight (which is the same regardless of the element type).
