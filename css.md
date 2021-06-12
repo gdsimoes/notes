@@ -53,3 +53,7 @@ strong {
 ```
 
 The value we usually get for 'font-weight in 'strong' elements is defined in the user-agent stylesheet and is not the so-called 'initial' value of font-weight (which is the same regardless of the element type).
+
+## Position: relative and absolute
+
+If you want an element with the property `position: absolute` to have its width, height, and position set relative to its parent container, then use `position: relative` in the parent container.
