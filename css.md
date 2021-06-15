@@ -57,3 +57,36 @@ The value we usually get for 'font-weight in 'strong' elements is defined in the
 ## Position: relative and absolute
 
 If you want an element with the property `position: absolute` to have its width, height, and position set relative to its parent container, then use `position: relative` in the parent container.
+
+## CSS Remedy behavior
+
+If you are using [CSS Remedy](https://github.com/jensimmons/cssremedy) (which I usually am), then remember that you might be surprised by some CSS behavior. For example, all images by default will only have 100% of the width.
+
+The browser inspector is a great to help understand what is going on.
+
+## The function `translateY` is moving an element horizontally?
+
+Let's look at the following code from a recent project of mine:
+
+```CSS
+#officeWorker {
+    /* ... */
+    transform: translate(-50%, -50%);
+}
+```
+
+Later I tried changing the position of the image:
+
+```CSS
+@media screen and (min-width: 1000px) {
+    /* ... */
+    #woman {
+        /*  */
+        transform: translateY(-50%);
+    }
+}
+```
+
+I was surprised to see that when I added the `translateY` line the image moved horizontally. This happened because the first value of transformed (which moved the image in both dimensions) was replaced by the following one, creating the impression of a horizontal movement caused by `translateY`.
+
+Once again, I was saved by Firefox's inspector DOM and style inspector.
