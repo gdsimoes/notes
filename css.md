@@ -80,7 +80,7 @@ Later I tried changing the position of the image:
 ```CSS
 @media screen and (min-width: 1000px) {
     /* ... */
-    #woman {
+    #officeWorker {
         /*  */
         transform: translateY(-50%);
     }
