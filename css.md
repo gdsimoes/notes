@@ -90,3 +90,27 @@ Later I tried changing the position of the image:
 I was surprised to see that when I added the `translateY` line the image moved horizontally. This happened because the first value of transformed (which moved the image in both dimensions) was replaced by the following one, creating the impression of a horizontal movement caused by `translateY`.
 
 Once again, I was saved by Firefox's inspector DOM and style inspector.
+
+## Opacity in child elements
+
+The `opacity` property affects all child elements even if they have their `opacity` set to 1. For example, if we have the following HTML:
+
+```html
+<div id="container">
+    <div id="child">...</div>
+</div>
+```
+
+And style it with the following CSS:
+
+```css
+#container {
+    opacity: 0.5;
+}
+
+#child {
+    opacity: 1;
+}
+```
+
+The child element will still be transparent.
