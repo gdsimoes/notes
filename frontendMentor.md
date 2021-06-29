@@ -45,3 +45,17 @@ Start by coping (while adapting) the `head` and `footer` section from previous p
 ## Read the style-guide
 
 Read carefully the style guide. Now is a good time to create some Sass variables.
+
+## Do the mobile layout
+
+Create the grid or flexbox layout, set up font families and the colors. Don't worry too much about making everything perfect, like the font sizes.
+
+**Important**: To make the website grow responsively more like a picture you can use `vw` as units. It won't work for monitors with very uncommon sizes. Unfortunately, I don't know how to solve this.
+
+## Do the desktop layout
+
+Before finishing the mobile layout it might be a good idea to start with the desktop one. Then you can dealt with the fonts all at once.
+
+## Finishing up
+
+Remove any cruft, write some comments and write the README.md
