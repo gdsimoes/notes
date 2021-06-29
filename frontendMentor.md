@@ -58,4 +58,4 @@ Before finishing the mobile layout it might be a good idea to start with the des
 
 ## Finishing up
 
-Remove any cruft, write some comments and write the README.md
+Remove any cruft, write some comments and write the README.md. If there is anything interactive or animations on the website you should create a gif showing it. It can be done uploading a screen recording to gfycat.
